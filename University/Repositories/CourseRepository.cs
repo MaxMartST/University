@@ -12,9 +12,9 @@ namespace University.Repositories
         {
         }
 
-        public void Add(Course course)
+        public async Task AddAsync(Course course)
         {
-            _context.Courses.AddAsync(course);
+            await _context.Courses.AddAsync(course);
         }
 
         public void Delete(Course course)
